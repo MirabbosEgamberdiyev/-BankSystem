@@ -1,4 +1,4 @@
-﻿using Homework14;
+﻿using Homework14.Mathods;
 
 public interface IBankList
 {

@@ -1,4 +1,4 @@
-﻿using Homework14;
+﻿using Homework14.Mathods;
 using System.Net;
 
 Bank bank1 = new Bank

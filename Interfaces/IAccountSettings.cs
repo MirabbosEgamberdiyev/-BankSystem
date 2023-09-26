@@ -1,4 +1,6 @@
 ﻿
+using Homework14.Mathods;
+
 namespace Homework14.Interfaces;
 
 public interface IAccountSettings

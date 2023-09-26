@@ -1,7 +1,6 @@
-﻿
-using Homework14.Interfaces;
+﻿using Homework14.Interfaces;
 
-namespace Homework14;
+namespace Homework14.Mathods;
 public class AccountSettings : IAccountSettings, IAccountPayments
 {
     private List<Account> accounts;
@@ -41,7 +40,7 @@ public class AccountSettings : IAccountSettings, IAccountPayments
 
     public void Withdraw(Account account, Card card, double amount)
     {
-       
+
         if (account.Cards.Contains(card))
         {
             if (account.TotalBalance >= amount)
@@ -62,7 +61,7 @@ public class AccountSettings : IAccountSettings, IAccountPayments
 
     public void Deposit(Account account, Card card, double amount)
     {
-        
+
         if (account.Cards.Contains(card))
         {
             account.TotalBalance += amount;
@@ -76,7 +75,7 @@ public class AccountSettings : IAccountSettings, IAccountPayments
 
     public void CreateCard(Account account, Card card)
     {
-        
+
         account.Cards.Add(card);
         Console.WriteLine($"Card created and linked to Account Number: {account.AccountNumber}.");
     }

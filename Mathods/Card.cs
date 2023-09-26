@@ -1,5 +1,4 @@
-﻿
-namespace Homework14;
+﻿namespace Homework14.Mathods;
 
 public class Card
 {

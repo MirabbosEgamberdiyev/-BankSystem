@@ -1,6 +1,4 @@
-﻿
-
-namespace Homework14;
+﻿namespace Homework14.Mathods;
 
 public class User
 {
@@ -10,5 +8,5 @@ public class User
     public DateTime BirthDate { get; set; }
     public string PhoneNumber { get; set; } = string.Empty;
 
-    
+
 }

@@ -1,5 +1,5 @@
 ﻿using Homework14.Interfaces;
-using Homework14;
+using Homework14.Mathods;
 
 public class BankList : IBankList
 {
