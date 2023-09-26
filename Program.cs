@@ -18,9 +18,19 @@ Bank bank2 = new Bank
     PhoneNumber = 889996399
 
 };
+Bank bank3 = new Bank
+{
+    Id = 2,
+    Name = "Anor Bank",
+    FoundedDate = 2021,
+    Address = "Namangan , Uzbekiston",
+    PhoneNumber = 889996399
+
+};
 BankList bankList = new BankList();
 bankList.CreateBank(bank1);
-bankList.CreateBank(bank2); 
+bankList.CreateBank(bank2);
+bankList.CreateBank(bank3);
 var allBanks = bankList.GetAllBanks();
 
 foreach (var bank in allBanks)
@@ -29,12 +39,15 @@ foreach (var bank in allBanks)
 }
 Console.WriteLine();
 Console.WriteLine();
+
+
+
 Bank updatedBank = new Bank
 {
     Id = 1,
     Name = "TBC Bank",
     FoundedDate = 2023,
-    Address = "Farg'ona",
+    Address = "Farg'ona , Uzbekiston",
     PhoneNumber = 789997788
 };
 bankList.UpdateBank(updatedBank);

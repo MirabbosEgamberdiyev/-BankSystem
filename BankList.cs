@@ -18,16 +18,15 @@ public class BankList : IBankList
     public void UpdateBank(Bank bank)
     {
   
-        Bank MavkudBank = banks.Find(b => b.Id == bank.Id);
-        if (MavkudBank != null)
+        Bank MavjudBank = banks.Find(b => b.Id == bank.Id);
+        if (MavjudBank != null)
         {
-            MavkudBank.Name = bank.Name;
-            MavkudBank.FoundedDate = bank.FoundedDate;
-            MavkudBank.Address = bank.Address;
-            MavkudBank.PhoneNumber = bank.PhoneNumber;
+            MavjudBank.Name = bank.Name;
+            MavjudBank.FoundedDate = bank.FoundedDate;
+            MavjudBank.Address = bank.Address;
+            MavjudBank.PhoneNumber = bank.PhoneNumber;
         }
     }
-
     public void RemoveBank(Bank bank)
     {
         banks.Remove(bank);
