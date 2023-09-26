@@ -9,4 +9,5 @@ public interface IAccountSettings
     void UpdateAccount(Account account);
     void RemoveAccount(Account account);
     List<Account> GetAllAccounts();
+    
 }

@@ -20,17 +20,29 @@ Bank bank2 = new Bank
 };
 Bank bank3 = new Bank
 {
-    Id = 2,
-    Name = "Anor Bank",
-    FoundedDate = 2021,
+    Id = 3,
+    Name = "Agrobank",
+    FoundedDate = 2020,
     Address = "Namangan , Uzbekiston",
-    PhoneNumber = 889996399
+    PhoneNumber = 949996399
 
 };
+Bank bank4 = new Bank
+{
+    Id = 3,
+    Name = "Agrobank",
+    FoundedDate = 2020,
+    Address = "Namangan , Uzbekiston",
+    PhoneNumber = 949996399
+
+};
+
 BankList bankList = new BankList();
 bankList.CreateBank(bank1);
 bankList.CreateBank(bank2);
 bankList.CreateBank(bank3);
+bankList.CreateBank(bank4);
+
 var allBanks = bankList.GetAllBanks();
 
 foreach (var bank in allBanks)
